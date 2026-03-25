@@ -1,0 +1,61 @@
+{
+  "name": "ccs",
+  "version": "0.1.0",
+  "description": "Claude Code Switcher - A CLI tool to quickly switch AI providers and models",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ccs": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "cli",
+    "ai-tools",
+    "provider-switcher",
+    "anthropic",
+    "openai-compatible"
+  ],
+  "author": "wanggenzhen",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "conf": "^12.0.0",
+    "inquirer": "^9.2.0",
+    "open": "^10.0.0",
+    "ora": "^8.0.0",
+    "update-notifier": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "@types/update-notifier": "^6.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthropics/ccs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anthropics/ccs/issues"
+  },
+  "homepage": "https://github.com/anthropics/ccs#readme"
+}

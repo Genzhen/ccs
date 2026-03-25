@@ -23,7 +23,7 @@
     "anthropic",
     "openai-compatible"
   ],
-  "author": "wanggenzhen",
+  "author": "genzhen",
   "license": "MIT",
   "files": [
     "dist",
